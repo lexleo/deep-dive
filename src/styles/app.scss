@@ -1,0 +1,17 @@
+// Colors
+$black: #2b2a28;
+
+
+// Resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+@import 'common/media';
+@import 'common/mixins';
+@import 'common/layout';
+
+@import 'components/parallax';
+
+@import 'pages/index';
