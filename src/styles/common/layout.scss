@@ -39,6 +39,7 @@ html {
     @include flex(column);
     justify-content: flex-start;
     height: auto;
+    min-height: 100vh;
   }
   
   

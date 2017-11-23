@@ -8,6 +8,9 @@ $laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
 
+// Normalize
+@import 'common/normalize.min';
+
 @import 'common/media';
 @import 'common/mixins';
 @import 'common/layout';
