@@ -5,12 +5,5 @@ block variables
 
 block content
     .page-container
-        .parallax-container
-            #scene
-                div(data-depth="0.2")
-                    .responsive-img
-                        img(src="assets/images/deep_dive_title.png" class="parallax__image parallax__layer1")
-                div(data-depth="0.4")
-                    .responsive-img
-                        img(src="assets/images/vr.png" class="parallax__image parallax__layer2")
+        include ../components/parallax.pug                        
         .content

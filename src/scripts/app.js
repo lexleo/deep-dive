@@ -1,1 +1,1 @@
-const component = require('./pages/index');
+const component = require('./components/parallax');
