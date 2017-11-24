@@ -1,10 +1,12 @@
 .parallax-wrapper
     #parallax
-        div(data-depth="0.2" class='parallax__layer responsive-img')
+        div(data-depth="0.1" class='parallax__layer responsive-img parallax__bg')
           img(src='./assets/images/parallax/back.png').parallax__image
-        div(data-depth="0.4" class='parallax__layer responsive-img')
+        div(data-depth="0.35" class='parallax__layer responsive-img parallax__inner')
+          img(src='./assets/images/parallax/inner.png').parallax__image
+        div(data-depth="0.5" class='parallax__layer responsive-img parallax__hangar')
           img(src='./assets/images/parallax/hangar.png').parallax__image
-        div(data-depth="0.6" class='parallax__layer responsive-img')
+        div(data-depth="0.6" class='parallax__layer responsive-img parallax__roof')
           img(src='./assets/images/parallax/roof.png').parallax__image
-        div(data-depth="0.7" class='parallax__layer responsive-img')
+        div(data-depth="0.8" class='parallax__layer responsive-img parallax__grass')
           img(src='./assets/images/parallax/grass.png').parallax__image

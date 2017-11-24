@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    transform: scale(.5);
+    // transform: scale(.5) translateX(-100px);
 }
 
 .parallax__layer {
@@ -25,7 +25,9 @@
     position: absolute;
     top: 0;
     left: 0;
+    // transform: translateX(200px);
     will-change: transform;
+    color: black;
 }
 
 .parallax__image {
@@ -35,5 +37,9 @@
     max-width: 110%;
     user-select: none;
     color: black;
-    // transform: translateX(-5%);
+  }
+
+  .parallax__grass {
+    // transform: translateY(-150%);
+    color: black;
   }
