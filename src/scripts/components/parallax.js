@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         limitY: false,
         limitX: false,
         scalarX: 10,
-        scalarY: 3
+        scalarY: 5
     });
 });
 

@@ -25,38 +25,34 @@
     top: 0;
     left: 0;
     will-change: transform;
-    // color: whi
 }
 
 .parallax__image {
     position: absolute;
-    top: 0;
-    max-height: 105%;
-    max-width: 105%;
+    max-height: 110%;
+    max-width: 110%;
     user-select: none;
-    color: red;
-    transform: translateY(-1%);
-  }
+    transform: translateX(-3%);
+}
 
-  .parallax__grass {
-    transform: scale(1.27) translateY(8%) scaleY(1.2);
-    // color: red;
-    color: blue;
-  }
 
-  .parallax__roof {
-    transform: scale(1.4) translateY(14%) translateX(1%) scaleY(1.04);
-    // color: red;
-    color: blue;
-  }
+.parallax__roof {
+    transform: scale(1.24) translateY(7%);
+}
 
-  .parallax__hangar{
-    transform: translateY(18%) translateX(0);    
-    color: white;
-    color: black;
-    color: aqua;
-  }
+.parallax__hangar{
+    transform: scale(1.24) translateY(7%);
+}
 
-  .parallax__inner {
+.parallax__inner {
+    transform: scale(1.24) translateY(7%);   
+}
 
-  }
+.parallax__bg {
+  transform: scale(1.4) translateX(5%);
+}
+
+.parallax__grass {
+    transform: scale(1.36) translateY(2%); 
+}
+
