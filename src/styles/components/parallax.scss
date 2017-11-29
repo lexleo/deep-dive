@@ -1,64 +1,81 @@
-.parallax-wrapper {
+.parallax-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    background: #a4d1f8;
-}
-
-#parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
     overflow: hidden;
 }
 
-.parallax__layer {
-    height: 100%;
+#parallax {
+    position: relative;
+    // display: flex;
+    // justify-content: center;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 100vh;
+    background: #a4d1f8;
+    overflow: hidden;
+    transform: translateY(-200px);
+}
+
+.parallax__layer {
+    max-height: 100%;
+    max-width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     will-change: transform;
 }
 
 .parallax__image {
-    position: absolute;
-    max-height: 110%;
-    max-width: 110%;
-    user-select: none;
-    transform: translateX(-3%);
+    // max-height: 90%;
+    // max-width: 7000%;
+    transform: translateX(-15%);
+
+    width: auto;
+    height: 100vh;
 }
 
 
 .parallax__roof {
-    transform: scale(1.24) translateY(6%);
+    transform: scale(1.18) translateY(2%) translateX(-5%);
     @include phones {
-        transform: scale(1.24) translateY(5%);
+        transform: scale(1.2) translateY(5%);
     }    
 }
 
 .parallax__hangar{
-    transform: scale(1.24) translateY(7%);
+    transform: scale(1.16) translateY(2%) translateX(-5%);
 }
 
 .parallax__inner {
-    transform: scale(1.24) translateY(8%);   
+    transform: scale(1.265) translateY(3%) translateX(-5%);   
 }
 
 .parallax__bg {
-    transform: scale(1.45) translateY(11%) translateX(6%);
+    transform: scale(1.45) translateY(10%) translateX(5%);
 }
 
 .parallax__grass {
-    transform: scale(1.325) translateY(2%);
+    transform: scale(1.3) translateY(-4%) translateX(-2%);
     @include phones {
-        transform: scale(1.325) translateY(-1%);
+        transform: scale(1.325) translateY(-1%) translateX(-2%);
     }    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.con {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hangar {
+    width: auto;
+    height: 100%;
 }
 
