@@ -17,4 +17,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
     });
 });
 
+window.addEventListener('orientationchange', () => { location.reload(); });
+
 
