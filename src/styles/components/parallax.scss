@@ -7,52 +7,77 @@
 
 #parallax {
     position: relative;
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background: #a4d1f8;
     overflow: hidden;
-    transform: translateY(-200px);
 }
 
 .parallax__layer {
     max-height: 100%;
     max-width: 100%;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
     will-change: transform;
 }
 
 .parallax__image {
-    // max-height: 90%;
-    // max-width: 7000%;
-    transform: translateX(-15%);
-
     width: auto;
     height: 100vh;
 }
 
 
 .parallax__roof {
-    transform: scale(1.18) translateY(2%) translateX(-5%);  
+    transform: scale(1.18) translateY(2%) translateX(-5%);
+    @include tablets {
+        transform: scale(1.18) translateY(2%) translateX(-19%);  
+    }   
+    @include phones {
+        transform: scale(1.18) translateY(2%) translateX(-43%);  
+    }
 }
 
 .parallax__hangar{
     transform: scale(1.16) translateY(2%) translateX(-5%);
+    @include tablets {
+        transform: scale(1.16) translateY(2%) translateX(-20%);
+    }   
+    @include phones {
+        transform: scale(1.16) translateY(2%) translateX(-34%);
+    }
+    
 }
 
 .parallax__inner {
-    transform: scale(1.265) translateY(3%) translateX(-5%);   
+    transform: scale(1.265) translateY(3%) translateX(-5%); 
+    @include tablets {
+        transform: scale(1.265) translateY(3%) translateX(-19%); 
+    }   
+    @include phones {
+        transform: scale(1.265) translateY(3%) translateX(-34%); 
+    }  
+    
 }
 
 .parallax__bg {
     transform: scale(1.45) translateY(10%) translateX(5%);
+    @include tablets {
+        transform: scale(1.45) translateY(10%) translateX(-24%);
+    }
+    @include phones {
+        transform: scale(1.45) translateY(10%) translateX(-24%);
+    }
 }
 
 .parallax__grass {
-    transform: scale(1.3) translateY(-4%) translateX(-2%);   
+    transform: scale(1.3) translateY(-4%) translateX(-2%);
+    @include tablets {
+        transform: scale(1.3) translateY(-4%) translateX(-37%);        
+    }   
+    @include phones {
+        transform: scale(1.3) translateY(-4%) translateX(-37%);
+    }   
+    
 }
 
 .container {
