@@ -24,6 +24,7 @@
 .parallax__image {
     width: auto;
     height: 100vh;
+    // min-height: 680px;
 }
 
 
@@ -35,6 +36,10 @@
     @include phones {
         transform: scale(1.18) translateY(2%) translateX(-43%);  
     }
+
+    @include phones__landscape {
+        transform: scale(1.18) translateY(2%) translateX(-6%);  
+    }
 }
 
 .parallax__hangar{
@@ -42,37 +47,54 @@
     @include tablets {
         transform: scale(1.16) translateY(2%) translateX(-20%);
     }   
+
     @include phones {
         transform: scale(1.16) translateY(2%) translateX(-34%);
     }
+
+    @include phones__landscape {
+        transform: scale(1.16) translateY(2%) translateX(-6%);
+    }    
     
 }
 
 .parallax__inner {
     transform: scale(1.265) translateY(3%) translateX(-5%); 
+
     @include tablets {
         transform: scale(1.265) translateY(3%) translateX(-19%); 
     }   
+
     @include phones {
         transform: scale(1.265) translateY(3%) translateX(-34%); 
+    }
+    
+    @include phones__landscape {
+        transform: scale(1.265) translateY(3%) translateX(-6%); 
     }  
     
 }
 
 .parallax__bg {
     transform: scale(1.45) translateY(10%) translateX(5%);
+
     @include tablets {
         transform: scale(1.45) translateY(10%) translateX(-24%);
     }
+
     @include phones {
         transform: scale(1.45) translateY(10%) translateX(-24%);
+    }
+
+    @include phones__landscape {
+        transform: scale(1.45) translateY(10%) translateX(4%);
     }
 }
 
 .parallax__grass {
     transform: scale(1.3) translateY(-4%) translateX(-2%);
     @include tablets {
-        transform: scale(1.3) translateY(-4%) translateX(-37%);        
+        transform: scale(1.3) translateY(-4%) translateX(-10%);        
     }   
     @include phones {
         transform: scale(1.3) translateY(-4%) translateX(-37%);
