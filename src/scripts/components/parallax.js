@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     });
 });
 
-window.addEventListener('orientationchange', () => { location.reload(); });
+if (window.DeviceOrientationEvent) {
+    window.addEventListener('orientationchange', function() { 
+        location.reload();
+        alert('changed!');
+    }, false);
+}
 
 
