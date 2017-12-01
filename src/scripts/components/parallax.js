@@ -14,15 +14,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         // originY: 0.8,
         // originX: 0
-        limitX: 10,
-        limitY: 10
+        limitX: 500,
+        limitY: 100
     });
 });
 
 if (window.DeviceOrientationEvent) {
     window.addEventListener('orientationchange', function() { 
         location.reload();
-        alert('changed!');
     }, false);
 }
 
