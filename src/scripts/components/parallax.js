@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // originY: 0.8,
         // originX: 0
         limitX: 500,
-        limitY: 50
+        limitY: 10
     });
 });
 
