@@ -1,11 +1,12 @@
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 1%;
     outline: none;
     opacity: .8;
     z-index: 10000;
     transition: .3s;
+    margin-top: 7px;
     &:hover {
         opacity: 1;
     }
