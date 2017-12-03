@@ -1,7 +1,13 @@
 extends ../template
 
 block variables
-    - var title = "Deep Dive VR"
+    - var title = "deep dive " + sup
 
 block content
-    include ../components/parallax.pug                        
+    include ../components/humburger.pug
+    //- include ../components/fs-menu.pug
+    include ../components/pipboy.html
+    include ../components/parallax.pug
+    include about.pug
+
+                      

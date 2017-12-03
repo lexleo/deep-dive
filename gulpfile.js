@@ -27,11 +27,11 @@ const paths = {
     root: './docs',
     templates: {
         pages: 'src/templates/pages/*.pug',
-        src: 'src/templates/**/*.pug',
+        src: 'src/templates/**/*.*',
         dest: 'docs/assets/'
     },
     styles: {
-        src: 'src/styles/**/*.scss',
+        src: 'src/styles/**/*.*',
         dest: 'docs/assets/styles/',
         css: './src/styles/app.scss'
     },
