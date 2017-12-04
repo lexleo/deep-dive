@@ -3,7 +3,8 @@ const gulp = require('gulp'),
       del = require('del'),
       rename = require('gulp-rename'),
       plumber = require('gulp-plumber'),
-      browserSync = require('browser-sync').create();
+      browserSync = require('browser-sync').create(),
+      px2rem = require('gulp-px-to-rem');
 
 // sprites
 const svgSprite = require('gulp-svg-sprite'),
@@ -66,6 +67,7 @@ function templates() {
 function styles() {
     return gulp.src(paths.styles.css)
         .pipe(plumber())
+        // .pipe(px2rem({accuracy:2}))
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())

@@ -1,3 +1,7 @@
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
 @mixin tablets {
     @media screen and (max-width: $tablets) {
       @content;
@@ -12,6 +16,12 @@
 
   @mixin phones__landscape {
     @media screen and (max-height: 400px) and (orientation:landscape) {
+      @content;
+    }
+  }
+
+  @mixin phones__portrait {
+    @media screen and (max-height: 400px) and (orientation:portrait) {
       @content;
     }
   }

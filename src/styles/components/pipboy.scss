@@ -15,7 +15,7 @@
   transition: .5s;
   min-width: 645px;
   // background: rgba(#35a539, 0.65);
-  @include phones {
+  @include tablets {
     right: -200%;
   }
 }
