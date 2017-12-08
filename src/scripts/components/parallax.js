@@ -33,12 +33,7 @@ function manageParallax() {
     let height = window.innerHeight;
     let images = document.querySelectorAll('.parallax__image');
     
-    console.log(window.orientation);
-
-    // if ((width < height) && (innerWidth < 480)) {
-    //     parallaxInstance.scalar(100, 50);
-    // }
-
+    
     if (images[0]) {
         if ((width > height) && (images[0].classList.contains('image-h'))) {
             // alert('h to w!');
@@ -56,6 +51,17 @@ function manageParallax() {
             });
         }
     }
+
+    if (parallaxInstance) {
+        if ((width < height) && (width < 500)) {
+            parallaxInstance.scalar(130, 10);
+        }
+        if (width > 500) {
+            parallaxInstance.scalar(20, 10);
+        }
+    }
+
+
 }
 
 
