@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // originX: 0
         // limitX: 700,
 
-        limitY: 5,
+        limitY: 50,
         onReady: manageParallax()
     });
 });
