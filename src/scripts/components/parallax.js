@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // frictionX: 0.1,
         // frictionY: 0.1,
 
-        scalarX: 120,
+        scalarX: 20,
         // scalarY: 10,
 
         // limitX: 700,
 
-        limitY: 50,
+        limitY: 40,
         onReady: manageParallax()
     });
 });
