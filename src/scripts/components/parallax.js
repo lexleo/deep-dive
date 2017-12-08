@@ -1,20 +1,18 @@
 import Parallax from 'parallax-js';
-var images;
+var parallaxInstance;
 
 document.addEventListener("DOMContentLoaded", (e) => {
     let parallax = document.getElementById('parallax');
 
-    var parallaxInstance = new Parallax(parallax, {
+        parallaxInstance = new Parallax(parallax, {
         relativeInput: true,
         clipRelativeInput: true,
         // frictionX: 0.1,
         // frictionY: 0.1,
 
-        scalarX: 20,
+        scalarX: 120,
         // scalarY: 10,
 
-        // originY: 0.8,
-        // originX: 0
         // limitX: 700,
 
         limitY: 50,
@@ -35,6 +33,12 @@ function manageParallax() {
     let height = window.innerHeight;
     let images = document.querySelectorAll('.parallax__image');
     
+    console.log(window.orientation);
+
+    // if ((width < height) && (innerWidth < 480)) {
+    //     parallaxInstance.scalar(100, 50);
+    // }
+
     if (images[0]) {
         if ((width > height) && (images[0].classList.contains('image-h'))) {
             // alert('h to w!');
