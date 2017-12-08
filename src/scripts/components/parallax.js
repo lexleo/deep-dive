@@ -3,9 +3,6 @@ var images;
 
 document.addEventListener("DOMContentLoaded", (e) => {
     let parallax = document.getElementById('parallax');
-    images = document.querySelectorAll('.parallax__image');
-
-    manageParallax();
 
     var parallaxInstance = new Parallax(parallax, {
         relativeInput: true,
@@ -19,40 +16,46 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // originY: 0.8,
         // originX: 0
         // limitX: 700,
-        limitY: 50
+
+        limitY: 50,
+        onReady: manageParallax()
     });
 });
 
-if (window.DeviceOrientationEvent) {
-    window.addEventListener('orientationchange', function() { 
-        location.reload();
-    }, false);
-}
+// if (window.DeviceOrientationEvent) {
+//     window.addEventListener('orientationchange', function() { 
+//         location.reload();
+//     }, false);
+// }
 
 
 function manageParallax() {
 
     let width = window.innerWidth;
     let height = window.innerHeight;
+    let images = document.querySelectorAll('.parallax__image');
     
-    if ((width > height) && (images[0].classList.contains('image-h'))) {
-        alert('h to w!');
-        images.forEach(function(el) {
-            el.classList.remove('image-h');
-            el.classList.add('image-w');
-        });
-    }
+    if (images[0]) {
+        if ((width > height) && (images[0].classList.contains('image-h'))) {
+            alert('h to w!');
+            images.forEach(function(el) {
+                el.classList.remove('image-h');
+                el.classList.add('image-w');
+            });
+        }
 
-    if ((width < height) && (images[0].classList.contains('image-w'))) {
-        alert('w to h!');
-        images.forEach(function(el) {
-            el.classList.remove('image-w');
-            el.classList.add('image-h');
-        });
+        if ((width < height) && (images[0].classList.contains('image-w'))) {
+            alert('w to h!');
+            images.forEach(function(el) {
+                el.classList.remove('image-w');
+                el.classList.add('image-h');
+            });
+        }
     }
 }
 
-window.onresize(manageParallax());
+
+window.onresize = manageParallax;
 
 
 
