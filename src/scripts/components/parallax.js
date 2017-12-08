@@ -37,7 +37,7 @@ function manageParallax() {
     
     if (images[0]) {
         if ((width > height) && (images[0].classList.contains('image-h'))) {
-            alert('h to w!');
+            // alert('h to w!');
             images.forEach(function(el) {
                 el.classList.remove('image-h');
                 el.classList.add('image-w');
@@ -45,7 +45,7 @@ function manageParallax() {
         }
 
         if ((width < height) && (images[0].classList.contains('image-w'))) {
-            alert('w to h!');
+            // alert('w to h!');
             images.forEach(function(el) {
                 el.classList.remove('image-w');
                 el.classList.add('image-h');
