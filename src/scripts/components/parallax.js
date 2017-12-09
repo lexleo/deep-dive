@@ -1,24 +1,27 @@
 import Parallax from 'parallax-js';
 var parallaxInstance;
+var soilParallaxInstance;
 
 document.addEventListener("DOMContentLoaded", (e) => {
     let parallax = document.getElementById('parallax');
+    let soilParallax = document.getElementById('soilParallax');
+    
 
-        parallaxInstance = new Parallax(parallax, {
+    parallaxInstance = new Parallax(parallax, {
         relativeInput: true,
         clipRelativeInput: true,
-        // frictionX: 0.1,
-        // frictionY: 0.1,
-
         scalarX: 20,
-        // scalarY: 10,
-
-        // limitX: 700,
-
         limitY: 40,
         onReady: manageParallax()
     });
+
+    soilParallaxInstance = new Parallax(soilParallax, {
+        scalarY: 0
+    });
+
 });
+
+
 
 // if (window.DeviceOrientationEvent) {
 //     window.addEventListener('orientationchange', function() { 
@@ -63,7 +66,6 @@ function manageParallax() {
 
 
 }
-
 
 window.onresize = manageParallax;
 

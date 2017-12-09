@@ -7,14 +7,26 @@
     height: 100vh;
     position: relative;
     background-size: cover;
+    overflow: hidden;
+}
+
+#soilParallax {
+    width: 200%;
+    height: 90px;
+    overflow: hidden;
 }
 
 .soil-row {
+    height: 100%;
+    width: 100%;
+}
+
+.soil-row-bg {
     background: url('../images/soil.jpg');
     background-size: contain;
     width: 100%;
-    height: 90px;
-    // border-top: 1px solid $black;
+    height: 100%;
+    transform: translateX(-20%);        
 }
 
 .about__row {
