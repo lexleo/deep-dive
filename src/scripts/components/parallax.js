@@ -57,7 +57,8 @@ function manageParallax() {
 
     if (parallaxInstance) {
         if ((width < height) && (width < 500)) {
-            parallaxInstance.scalar(130, 10);
+            parallaxInstance.scalar(80, 10);
+            parallaxInstance.limit(0, 0);            
         }
         if (width > 500) {
             parallaxInstance.scalar(20, 10);
