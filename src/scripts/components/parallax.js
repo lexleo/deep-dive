@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 });
 
 
-
 // if (window.DeviceOrientationEvent) {
 //     window.addEventListener('orientationchange', function() { 
 //         location.reload();
@@ -61,13 +60,14 @@ function manageParallax() {
         if ((width < height) && (width < 500)) {
             // alert('phone settings!');
             parallaxInstance.scalar(150, 10);
-            parallaxInstance.limit(500, 50);            
+            parallaxInstance.limit(500, 50);  
+            console.log(parallaxInstance);                      
         }
 
         if ((width > height) && (width < 700)) {
-            alert('phone landscape settings!');
-            parallaxInstance.scalar(20, 10);
-            parallaxInstance.limit(false, 10);            
+            // alert('phone landscape settings!');
+            parallaxInstance.scalar(20, 5);
+            parallaxInstance.limit(false, 10);  
         }
 
         if (width > 500) {
