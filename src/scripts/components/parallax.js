@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     
 
     parallaxInstance = new Parallax(parallax, {
-        relativeInput: true,
-        clipRelativeInput: true,
+        // relativeInput: true,
+        // clipRelativeInput: true,
         scalarX: 20,
         limitY: 40,
-        onReady: manageParallax()
+        onReady: manageParallax
     });
 
     soilParallaxInstance = new Parallax(soilParallax, {
@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 function manageParallax() {
+
+    // alert('manage parallax!');
 
     let width = window.innerWidth;
     let height = window.innerHeight;
@@ -55,14 +57,28 @@ function manageParallax() {
         }
     }
 
-    if (parallaxInstance) {
+    function parallaxSpeed() {
+
         if ((width < height) && (width < 500)) {
-            parallaxInstance.scalar(80, 10);
-            parallaxInstance.limit(0, 0);            
+            // alert('phone settings!');
+            parallaxInstance.scalar(150, 10);
+            parallaxInstance.limit(500, false);            
         }
         if (width > 500) {
+            // alert('desktop settings!');
             parallaxInstance.scalar(20, 10);
+            parallaxInstance.limit(false, false);
         }
+
+    }
+
+    if (parallaxInstance) { parallaxSpeed(); }
+    else {
+        setTimeout( ()=> {
+            if (parallaxInstance) {  
+                parallaxSpeed();             
+            }    
+        }, 500);    
     }
 
 

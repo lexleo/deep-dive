@@ -72,7 +72,7 @@
     // }   
 
     @include phones {
-        transform: scale(1.265) translateY(3%) translateX(-34%); 
+        transform: scale(1.265) translateY(3%) translateX(-32%); 
     }
     
     // @include phones__landscape {
@@ -99,9 +99,7 @@
 }
 
 .parallax__grass {
-    transform: scale(1.31) translateY(-5%) translateX(-3%);
-
-    // transform: scale(1.5) translateY(-9%) translateX(-2%);     // scale 1.31
+    transform: scale(1.31) translateY(-3%) translateX(-3%);
 
     @include laptops {
         transform: scale(1.4) translateY(-6%) translateX(-10%);        
