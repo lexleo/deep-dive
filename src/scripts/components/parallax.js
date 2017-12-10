@@ -66,8 +66,8 @@ function manageParallax() {
 
         if ((width > height) && (width < 700)) {
             // alert('phone landscape settings!');
-            parallaxInstance.scalar(20, 10);
-            parallaxInstance.limit(false, 30);  
+            parallaxInstance.scalar(10, 10);
+            parallaxInstance.limit(30, 30);  
         }
 
         if (width > 500) {
