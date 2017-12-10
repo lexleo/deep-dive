@@ -2,12 +2,6 @@ import Parallax from 'parallax-js';
 var parallaxInstance;
 var soilParallaxInstance;
 
-var gyroPresent = false;
-window.addEventListener("devicemotion", function(event){
-    if(event.rotationRate.alpha || event.rotationRate.beta || event.rotationRate.gamma)
-        gyroPresent = true;
-        alert('gyroScope active!');
-});
 
 document.addEventListener("DOMContentLoaded", (e) => {
     let parallax = document.getElementById('parallax');
@@ -16,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     parallaxInstance = new Parallax(parallax, {
         scalarX: 20,
-        limitY: 40,
+        limitY: 50,
         onReady: manageParallax
     });
 
@@ -67,19 +61,19 @@ function manageParallax() {
         if ((width < height) && (width < 500)) {
             // alert('phone settings!');
             parallaxInstance.scalar(150, 10);
-            parallaxInstance.limit(500, false);            
+            parallaxInstance.limit(500, 50);            
         }
 
-        if ((width < height) && (width < 500)) {
+        if ((width > height) && (width < 500)) {
             // alert('phone settings!');
-            parallaxInstance.scalar(150, 10);
-            parallaxInstance.limit(500, false);            
+            parallaxInstance.scalar(20, 10);
+            parallaxInstance.limit(false, 30);            
         }
 
         if (width > 500) {
             // alert('desktop settings!');
             parallaxInstance.scalar(20, 10);
-            parallaxInstance.limit(false, false);
+            parallaxInstance.limit(false, 50);
         }
 
     }
