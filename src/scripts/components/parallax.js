@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     parallaxInstance = new Parallax(parallax, {
         scalarX: 20,
-        scalarY: 100,
-        limitY: 50,
+        // limitY: 50,
         onReady: manageParallax
     });
 
@@ -63,11 +62,11 @@ function manageParallax() {
             parallaxInstance.limit(500, 50);  
         }
 
-        if ((width > height) && (width < 700)) {
-            // alert('phone landscape settings!');
-            parallaxInstance.scalar(10, 10);
-            parallaxInstance.limit(30, 30);
-        }
+        // if ((width > height) && (width < 700)) {
+        //     // alert('phone landscape settings!');
+        //     parallaxInstance.scalar(10, 10);
+        //     parallaxInstance.limit(30, 30);
+        // }
 
         if (width > 500) {
             // alert('desktop settings!');
