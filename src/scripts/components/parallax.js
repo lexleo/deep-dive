@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     parallaxInstance = new Parallax(parallax, {
         scalarX: 20,
+        scalarY: 100,
         limitY: 50,
         onReady: manageParallax
     });
@@ -30,7 +31,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 function manageParallax() {
 
-    // alert('manage parallax!');
 
     let width = window.innerWidth;
     let height = window.innerHeight;
@@ -66,8 +66,8 @@ function manageParallax() {
 
         if ((width > height) && (width < 700)) {
             // alert('phone landscape settings!');
-            parallaxInstance.scalar(20, 5);
-            parallaxInstance.limit(false, 10);  
+            parallaxInstance.scalar(20, 10);
+            parallaxInstance.limit(false, 30);  
         }
 
         if (width > 500) {
