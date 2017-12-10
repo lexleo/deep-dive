@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     parallaxInstance = new Parallax(parallax, {
         scalarX: 20,
-        // limitY: 50,
+        limitY: 50,
         onReady: manageParallax
     });
 
