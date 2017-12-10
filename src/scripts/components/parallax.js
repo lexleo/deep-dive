@@ -59,8 +59,6 @@ function manageParallax() {
 
         if ((width < height) && (width < 500)) {
             // alert('phone settings!');
-            parallaxInstance.enable();
-            soilParallaxInstance.enable();              
             parallaxInstance.scalar(150, 10);
             parallaxInstance.limit(500, 50);  
         }
@@ -69,14 +67,10 @@ function manageParallax() {
             // alert('phone landscape settings!');
             parallaxInstance.scalar(10, 10);
             parallaxInstance.limit(30, 30);
-            parallaxInstance.disable();
-            soilParallaxInstance.disable();                          
         }
 
         if (width > 500) {
             // alert('desktop settings!');
-            parallaxInstance.enable();
-            soilParallaxInstance.enable();                          
             parallaxInstance.scalar(20, 10);
             parallaxInstance.limit(false, 50);
         }
