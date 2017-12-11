@@ -62,11 +62,11 @@ function manageParallax() {
             parallaxInstance.limit(500, 50);  
         }
 
-        // if ((width > height) && (width < 700)) {
-        //     // alert('phone landscape settings!');
-        //     parallaxInstance.scalar(10, 10);
-        //     parallaxInstance.limit(30, 30);
-        // }
+        if ((width > height) && (width < 700)) {
+            // alert('phone landscape settings!');
+            parallaxInstance.scalar(30, 10);
+            parallaxInstance.limit(false, 50);
+        }
 
         if (width > 500) {
             // alert('desktop settings!');
