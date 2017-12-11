@@ -59,19 +59,28 @@ function manageParallax() {
         if ((width < height) && (width < 500)) {
             // alert('phone settings!');
             parallaxInstance.scalar(150, 10);
-            parallaxInstance.limit(500, 50);  
+            parallaxInstance.limit(500, 50);
+            soilParallaxInstance.scalar(37, 0);
+            soilParallaxInstance.limit(500, 0);
+            soilParallax.style.width = "400%";
         }
 
         if ((width > height) && (width < 700)) {
             // alert('phone landscape settings!');
             parallaxInstance.scalar(30, 10);
             parallaxInstance.limit(false, 50);
+            soilParallaxInstance.scalar(30, 0);
+            soilParallaxInstance.limit(false, 0);
+            soilParallax.style.width = "200%";            
         }
 
         if (width > 500) {
             // alert('desktop settings!');
             parallaxInstance.scalar(20, 10);
             parallaxInstance.limit(false, 50);
+            soilParallaxInstance.scalar(10, 0);
+            soilParallaxInstance.limit(false, 0);
+            soilParallax.style.width = "200%";            
         }
 
     }
