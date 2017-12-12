@@ -3,9 +3,11 @@ extends ../template
 block variables
     - var title = "Deep Dive VR"
 
+//- block append head
+    //- script(src='assets/scripts/onepagescroll.min.js')
+
 block content
     include ../components/humburger.pug
-    //- include ../components/fs-menu.pug
     include ../components/pipboy.html
     include ../components/parallax.pug
     include about.pug

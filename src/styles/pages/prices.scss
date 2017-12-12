@@ -28,6 +28,9 @@
     @include flex();
     margin-bottom: 40px;
     padding: 20px;
+    @include iphone6plus {
+        flex-direction: column;
+    }
 }
 
 .prices__item {

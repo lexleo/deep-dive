@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         });
     
         myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('drag');
     
         var coords = [
             [45.024827248374805,38.96403306812286]

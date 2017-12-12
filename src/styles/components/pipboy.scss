@@ -40,11 +40,17 @@
   position: relative;
   transition: .5s;
 
-  // transform: translateX(-100px);
+  @include  iphone6plus() {
+    // transform: translateX(-70px);
+  }
 
-  // @include phones() {
-  //   transform: translateX(-15%);
-  // }
+  @include  iphone6() {
+    transform: translateX(-90px);
+  }
+
+  @include  iphone5() {
+    transform: translateX(-100px);
+  }
 
 }
 

@@ -22,11 +22,18 @@
     font-size: rem(16px);
     padding: 20px;
     opacity: .95;
+    @include iphone6plus {
+        flex-direction: column;
+        padding: 20px 10px 20px 10px;
+    }
 }
 
 .footer__logo-wrapper {
     @include flex();
     width: 25%;
+    @include iphone6plus {
+        width: 100%;
+    }
 }
 
 .footer__logo {
@@ -38,21 +45,41 @@
     @include flex();
     width: 45%;
     text-align: center;
+    @include ipad() {
+        width: 55%;
+    }
+    @include iphone6plus {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .socials-wrapper {
     @include flex();
     width: 25%;
+    @include ipad() {
+        width: 15%;
+    }
 }
 
 .footer__adress {
     margin-right: 40px;
+    @include ipad {
+        margin-right: 20px;
+    }
+    @include iphone6plus {
+        margin-right: 0;
+    }
 }
 
 .footer__phone-link {
     text-decoration: none;
     color: $white;
     margin-right: 40px;
+    @include iphone6plus {
+        margin-right: 0;
+    }
 
 }
 
@@ -66,7 +93,6 @@
     &:last-child {
         margin-right: 0;
     }
-
 }
 
 .socials__icon {
