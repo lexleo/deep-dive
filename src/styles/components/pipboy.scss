@@ -41,7 +41,7 @@
   transition: .5s;
 
   @include  iphone6plus() {
-    // transform: translateX(-70px);
+    transform: translateX(-80px);
   }
 
   @include  iphone6() {
@@ -1288,4 +1288,14 @@ terminal {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 10px;
+}
+
+.black {
+  background: $black;
+  &:before {
+    background: $black;
+  }
+  &:after {
+    background: $black;
+  }
 }

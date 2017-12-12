@@ -1,11 +1,11 @@
 import Parallax from 'parallax-js';
 var parallaxInstance;
-var soilParallaxInstance;
+// var soilParallaxInstance;
 
 
 document.addEventListener("DOMContentLoaded", (e) => {
     let parallax = document.getElementById('parallax');
-    let soilParallax = document.getElementById('soilParallax');
+    // let soilParallax = document.getElementById('soilParallax');
     
 
     parallaxInstance = new Parallax(parallax, {
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         onReady: manageParallax
     });
 
-    soilParallaxInstance = new Parallax(soilParallax, {
-        scalarY: 0
-    });
+    // soilParallaxInstance = new Parallax(soilParallax, {
+    //     scalarY: 0
+    // });
 
 });
 
@@ -60,27 +60,27 @@ function manageParallax() {
             // alert('phone settings!');
             parallaxInstance.scalar(150, 10);
             parallaxInstance.limit(500, 50);
-            soilParallaxInstance.scalar(37, 0);
-            soilParallaxInstance.limit(500, 0);
-            soilParallax.style.width = "400%";
+            // soilParallaxInstance.scalar(37, 0);
+            // soilParallaxInstance.limit(500, 0);
+            // soilParallax.style.width = "400%";
         }
 
         if ((width > height) && (width < 700)) {
             // alert('phone landscape settings!');
             parallaxInstance.scalar(30, 10);
             parallaxInstance.limit(false, 50);
-            soilParallaxInstance.scalar(30, 0);
-            soilParallaxInstance.limit(false, 0);
-            soilParallax.style.width = "200%";            
+            // soilParallaxInstance.scalar(30, 0);
+            // soilParallaxInstance.limit(false, 0);
+            // soilParallax.style.width = "200%";            
         }
 
         if (width > 500) {
             // alert('desktop settings!');
             parallaxInstance.scalar(20, 10);
             parallaxInstance.limit(false, 50);
-            soilParallaxInstance.scalar(10, 0);
-            soilParallaxInstance.limit(false, 0);
-            soilParallax.style.width = "200%";            
+            // soilParallaxInstance.scalar(10, 0);
+            // soilParallaxInstance.limit(false, 0);
+            // soilParallax.style.width = "200%";            
         }
 
     }

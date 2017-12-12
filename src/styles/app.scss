@@ -26,11 +26,11 @@ $phones: 480px;
 @import "hamburgers/hamburgers.scss";
 
 // One page scroll
-// @import "libs/onepage-scroll.scss";
+@import "libs/onepage-scroll.scss";
 
 
 @import 'components/hamburger-menu';
-@import 'components/fs-menu';
+// @import 'components/fs-menu';
 @import 'components/pipboy';
 @import 'components/menu';
 @import 'components/parallax';
