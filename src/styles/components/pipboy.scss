@@ -1,29 +1,24 @@
-// @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
-
 ::-moz-selection, ::selection {
   background: lightgreen;
 }
 
 .pip-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
   height: 100%;
-  top: 0%;
-  right: -100%;
+  top: -150%;
+  left: 0;
   transition: .5s;
   min-width: 645px;
-  @include tablets {
-    right: -200%;
-  }
 }
 
 .pip--active {
-  right: 0%;
-  @include phones {
-    right: -50%;
-  }
+  top: 0;
 }
 
 .pip {
@@ -43,15 +38,14 @@
   margin: auto;
 
   position: relative;
-  margin-right: 2%;
   transition: .5s;
-  right: 0;
-  top: 0;
 
-  @include phones__landscape {
-    margin-top: 52px;
-    margin-right: 19px;
-  }
+  // transform: translateX(-100px);
+
+  // @include phones() {
+  //   transform: translateX(-15%);
+  // }
+
 }
 
 .pipfront {

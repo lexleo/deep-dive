@@ -1,11 +1,10 @@
 .menu-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: middle;
     width: 100%;
     height: 100vh;
-    position: relative;
 }
 
 
@@ -20,18 +19,41 @@
     }
 }
 
+.menu__title {
+    @include roboto(medium);
+    color: $white;
+    font-size: rem(45px);
+    margin-top: 3%;
+}
+
 .menu__desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: top;
     width: 100%;
-    color: white;
+    color: $white;
+    font-size: rem(18px);
     @include roboto();
-    margin-top: 10px;
+    margin-top: 20px;
     max-width:1000px;
     padding: 30px 20px 30px 30px;
     @include phones() {
         padding: 10px 10px 20px 20px;
     }
+}
+
+.center
+{
+    text-align: center;
+}
+
+.medium {
+   @include roboto(medium);
+}
+
+.vk-link {
+    text-decoration: underline;
+    color: $white;
+    margin-bottom: 60px;
 }

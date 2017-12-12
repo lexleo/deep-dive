@@ -12,7 +12,7 @@
 
 #soilParallax {
     width: 200%;
-    height: 90px;
+    height: 8%;
     overflow: hidden;
 }
 
@@ -29,60 +29,80 @@
     transform: translateX(-40%);        
 }
 
-.about__row {
+.about__content {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+
     width: 100%;
-    // border: 1px solid blue;
-    @include tablets() {
-        flex-direction: column;
-    }
+    height: 92%;
 }
 
-.about__row2 {
+
+.about__row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: center;
     width: 100%;
+    height: 70%;
     @include tablets() {
         flex-direction: column;
+        height: 100%;
     }
+    @include phones() {
+        flex-direction: column;
+        height: 100%;
+    }    
+    // @include laptops() {
+    //     flex-direction: column;
+    //     height: 100%;
+    // }    
+    
 }
 
 .logo-wrapper {
     max-width: 100%;
     max-height: 100%;
-    width: 33%;
+    width: 30%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    // border: 1px solid green;
-    justify-content: flex-start;
-    margin: 10px 20px 10px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
     @include tablets() {
         width: 100%;
+        height: 30%;
+        padding: 1%;
         justify-content: center;
         margin: 0;
+    }
+    @include phones() {
+        height: 20%;
+        padding: 0;
+    }
+
+    @include iphone6plus-land {
+        padding: 0;
+        height: 20%;
+    }
+
+    @include iphone5 {
+        height: 16%;
+        padding: 0;
+    }
+
+    @include iphone5-land {
+        display: none;
     }
 }
 
 .about__logo {
-    max-height: 100%;
-    max-width: 100%;
-    // min-width: 200px;
-    // max-width: 350px;
-    // border: 1px solid red;
-    @include tablets() {
-        max-width: 300px;
-        max-height: 180px;
-        color: white;
-    }
-    @include phones(){
-        max-width: 200px;
-        max-height: 150px;        
-    }
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 200px;
 }
 
 .vr__desc{
@@ -90,20 +110,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: top;
-    width: 100%;
-    // border: 1px solid green;
+    width: 70%;
+    height: 100%;
+    max-height: 100%;
     color: white;
     @include roboto();
-    max-width:1000px;
     padding: 30px;
-    margin: 20px;
     @include tablets() {
         margin-bottom: 0;
+        width: 100%;
+        padding: 30px;
+        height: 70%;
+
     }
     @include phones() {
+        height: 80%;
         margin-top: 0;
         padding: 20px 10px 20px 20px;
     }
+    
+    @include iphone6plus-land {
+        padding: 30px;
+        height: 80%;
+    }
+
+    @include iphone5 {
+        height: 84%;
+    }
+
+    @include iphone5-land {
+        height: 100%;
+        padding: 25px;
+    }
+
+
 }
 
 .vr {
@@ -112,5 +152,41 @@
 
 .desc__medium {
     @include roboto(medium);
-    color: $white;
+
+}
+
+.devices-wrapper {
+
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 40%;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+
+    @include tablets() {
+        height: 30%;
+    }
+    @include phones() {
+        display: none;
+    }
+    @include iphone6-land() {
+        display: none;
+    }    
+}
+
+.devices {
+    width: auto;
+    height: 100%;
+
+    @include ipad-land {
+        width: 100%;
+        height: auto;
+    }
+    @include iphone6plus-land {
+        width: auto;
+        height: 100%;           
+    }
 }

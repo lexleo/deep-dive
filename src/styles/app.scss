@@ -1,12 +1,13 @@
 // Colors
 $black: #2b2a28;
-$green: #35a539;
+$dark-green: #35a539;
+$green: #78e461;
 $white: #fefefe;
 
 
 // Resolutions
 $desktop: 1200px;
-$laptop: 992px;
+$laptops: 992px;
 $tablets: 768px;
 $phones: 480px;
 
@@ -31,5 +32,7 @@ $phones: 480px;
 @import 'components/parallax';
 @import 'pages/about';
 @import 'pages/menu';
+@import 'pages/prices';
+@import 'pages/contacts';
 
 @import 'pages/index';

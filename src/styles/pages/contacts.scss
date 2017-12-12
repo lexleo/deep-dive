@@ -1,0 +1,92 @@
+.contacts-wrapper {
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: $black;
+    @include flex();
+    @include roboto();
+    color: $white;
+    font-size: rem(16px);
+    padding: 20px;
+    opacity: .95;
+}
+
+.footer__logo-wrapper {
+    @include flex();
+    width: 25%;
+}
+
+.footer__logo {
+    width: 60px;
+    display: inline;
+}
+
+.contacts-info-wrapper {
+    @include flex();
+    width: 45%;
+    text-align: center;
+}
+
+.socials-wrapper {
+    @include flex();
+    width: 25%;
+}
+
+.footer__adress {
+    margin-right: 40px;
+}
+
+.footer__phone-link {
+    text-decoration: none;
+    color: $white;
+    margin-right: 40px;
+
+}
+
+.socials__list {
+    @include flex();
+    width: 100px;
+}
+
+.socials__item {
+    margin-right: 12px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.socials__icon {
+    width: 35px;
+    height: 35px;
+    opacity: 0.7;
+    transition: .3s;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.logo__title {
+    color: $white;
+    text-decoration: none;
+    @include roboto(medium);
+    font-size: rem(18px);
+    margin-left: 10px;
+}
+
+.footer__logo-link {
+    @include flex();
+}

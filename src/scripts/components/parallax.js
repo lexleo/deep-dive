@@ -91,9 +91,8 @@ function manageParallax() {
             if (parallaxInstance) {  
                 parallaxSpeed();             
             }    
-        }, 500);    
+        }, 500);
     }
-
 
 }
 

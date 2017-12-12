@@ -3,7 +3,7 @@
 }
 
 @mixin laptops {
-  @media screen and (max-width: $laptop) {
+  @media screen and (max-width: $laptops) {
     @content;
   }
 }
@@ -13,21 +13,61 @@
     @content;
   }
 }
-  
+
 @mixin phones {
-  @media screen and (max-width: $phones) {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
 
-@mixin phones__landscape {
-  @media screen and (max-height: 400px) and (orientation:landscape) {
+
+@mixin ipad {
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
     @content;
   }
 }
 
-@mixin phones__portrait {
-  @media screen and (max-height: 400px) and (orientation:portrait) {
+@mixin ipad-land {
+  @media screen and (max-width: 1024px) and (orientation:landscape) {
     @content;
   }
 }
+
+
+@mixin iphone6plus {
+  @media screen and (max-width: 740px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin iphone6plus-land {
+  @media screen and (max-width: 740px) and (orientation:landscape)  {
+    @content;
+  }
+}
+
+
+@mixin iphone6 {
+  @media screen and (max-width: 670px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin iphone6-land {
+  @media screen and (max-width: 670px) and (orientation:landscape)  {
+    @content;
+  }
+}
+
+@mixin iphone5 {
+  @media screen and (max-width: 570px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin iphone5-land {
+  @media screen and (max-width: 570px) and (orientation:landscape)  {
+    @content;
+  }
+}
+
