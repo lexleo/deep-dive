@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
           myCollection = new ymaps.GeoObjectCollection({}, {
             draggable: false,
             iconLayout: 'default#image',
-            iconImageHref: '../assets/images/icons/map-marker.svg',
+            iconImageHref: 'assets/images/icons/map-marker.svg',
             iconImageSize: [100, 100],
             iconImageOffset: [-58, -87]
           });
