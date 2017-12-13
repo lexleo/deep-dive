@@ -6,6 +6,16 @@
     width: 100%;
     height: 100vh;
     position: relative;
+
+    @include iphone5 {
+        justify-content: flex-start;
+    }
+
+    @include iphone5-land {
+        justify-content: flex-start;
+    }
+    
+
 }
 
 

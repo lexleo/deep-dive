@@ -28,45 +28,45 @@
 }
 
 @mixin ipad-land {
-  @media screen and (max-width: 1024px) and (orientation:landscape) {
+  @media screen and (max-width: 768px) and (orientation:landscape) {
     @content;
   }
 }
 
 
 @mixin iphone6plus {
-  @media screen and (max-width: 740px) and (orientation: portrait) {
+  @media screen and (max-width: 414px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin iphone6plus-land {
-  @media screen and (max-width: 740px) and (orientation:landscape)  {
+  @media screen and (max-width: 736px) and (orientation:landscape)  {
     @content;
   }
 }
 
 
 @mixin iphone6 {
-  @media screen and (max-width: 670px) and (orientation: portrait) {
+  @media screen and (max-width: 375px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin iphone6-land {
-  @media screen and (max-width: 670px) and (orientation:landscape)  {
+  @media screen and (max-width: 667px) and (orientation:landscape)  {
     @content;
   }
 }
 
 @mixin iphone5 {
-  @media screen and (max-width: 570px) and (orientation: portrait) {
+  @media screen and (max-width: 325px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin iphone5-land {
-  @media screen and (max-width: 570px) and (orientation:landscape)  {
+  @media screen and (max-width: 568px) and (orientation:landscape)  {
     @content;
   }
 }
