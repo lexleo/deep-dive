@@ -103,6 +103,12 @@
     height: 100%;
     max-width: 350px;
     max-height: 200px;
+    @include iphone6plus {
+        margin-top: 20px;
+    }
+    @include iphone6plus-land {
+        margin-top: 20px;
+    }    
 }
 
 .vr__desc{
