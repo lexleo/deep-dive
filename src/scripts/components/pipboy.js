@@ -10,11 +10,6 @@ const linkMenu = document.querySelector('.menu-link');
 const linkPrices = document.querySelector('.prices-link');
 const linkContacts = document.querySelector('.contacts-link');
 
-console.log(linkAbout);
-console.log(linkMenu);
-console.log(linkPrices);
-console.log(linkContacts);
-
 
 function togglePipBoy(e) {
     e.preventDefault();
