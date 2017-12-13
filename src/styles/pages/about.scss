@@ -46,15 +46,42 @@
         flex-direction: column;
     }
 
+ 
+    @include iphone6plus-land() {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    @include iphone6plus {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    @include iphone6-land {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    @include iphone6 {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    @include iphone5-land {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    @include iphone5 {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    
     @include phones() {
         flex-direction: column;
         height: 100%;
-    } 
-    
-    @include iphone6-land() {
-        flex-direction: column;
-        height: 100%;
-    } 
+    }     
      
     
 }
