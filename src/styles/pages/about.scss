@@ -133,8 +133,7 @@
     }    
 
     @include iphone5 {
-        height: 13%;
-        padding: 0;
+        display: none;
     }
     
 
@@ -195,12 +194,12 @@
 
 @include iphone5-land {
     height: 100%;
-    padding: 25px;
+    padding: 15px;
     width: 100%;
 }
 
 @include iphone5 {
-    height: 87%;
+    height: 100%;
     padding: 15px;
     width: 100%;
 }
