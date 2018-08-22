@@ -1,4 +1,6 @@
+# Deep Dive VR
+
 ![DEEP DIVE VR](docs/assets/images/logo_github.png)
 
-Сайт клуба виртуальной реальности Deep Dive VR:    
+Site of VR club:
 https://lexleo.github.io/deep-dive/
